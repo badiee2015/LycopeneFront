@@ -46,8 +46,10 @@ export default defineConfig((/* ctx */) => {
         vueShim: true
         // extendTsConfig (tsConfig) {}
       },
-
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+      //vueRouterMode: 'hash', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // better for SEO
+      rtl: true,
+      lang: 'fa-IR',
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
@@ -162,6 +164,7 @@ export default defineConfig((/* ctx */) => {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/developing-capacitor-apps/configuring-capacitor
     capacitor: {
+      version: 'latest', // me added
       hideSplashscreen: true
     },
 

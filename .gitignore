@@ -31,3 +31,20 @@ yarn-error.log*
 
 # local .env files
 .env.local*
+
+# Quasar
+/dist/
+/node_modules/
+
+# Capacitor build artifacts
+/src-capacitor/android/.gradle/
+/src-capacitor/android/app/build/
+/src-capacitor/android/build/
+/src-capacitor/ios/build/
+/src-capacitor/ios/Pods/
+/src-capacitor/www/
+
+# System files
+.DS_Store
+.idea/
+.vscode/
